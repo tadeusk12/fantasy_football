@@ -1,0 +1,36 @@
+---
+title: "Fantasy_Values"
+author: "Tadeus Kartawijaya"
+date: "9/22/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("knitr")
+source("Fantasy_Values.R")
+```
+
+## Fantasy Values
+
+The Fantasy Footballers are a popular podcast with a very large following of loyal listeners.
+They release an annual draft ranking, but keep their values for the draft a secret which can be revealed only through their purchasable draft kit. Using SQL and R, I intended to find the values from their free rankings compared to the ADP of ESPN and Sleeper, two of the most popular fantasy football platforms. 
+
+### Sleeper WR Values
+```{r wrsleeper, echo = FALSE}
+
+kable(sleeperwr_values)
+```
+### Sleeper RB Values
+```{r sleeper, echo = FALSE}
+
+kable(sleeperrb_values)
+```
+### ESPN WR Values
+```{r wrespn, echo = FALSE}
+kable(espnwr_values)
+```
+### ESPN RB Values
+```{r espn, echo = FALSE}
+kable(espnrb_values)
+```
